@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 让IE以最新内核运行HTML -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>bootstrap项目实战</title>
+    <!-- V4版本bootstrap样式 -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap V3版本的字体样式 -->
+    <link rel="stylesheet" href="css/font.css" />
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- 动画样式，用来配合wow.js -->
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+    <!--导航-->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- 导航标题logo -->
+            <a href="index.html" class="navbar-brand text-success">华瑞IT学院</a>
+            <!--小屏幕导航按钮和logo：折叠按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <span class="mr-auto"></span>
+                <!-- 使用单页面导航缓冲效果：nav -->
+                <ul class="navbar-nav font-weight-bold" id="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#bbs">论坛</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html5">前端开发</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#course">最新课程</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#app">移动APP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+            <!--导航-->
+
+        </div>
+    </nav>
+    <!--END导航-->
+
+    <!--home-->
+    <section id="home">
+        <div class="lvjing">
+            <div class="container">
+                <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <h1>Bootstrap实战课程等你来战！</h1>
+                        <p class=" mt-3">
+                            本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员<br />
+                            培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！
+                        </p>
+                        <!-- 幻灯片 -->
+                        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel"
+                            data-interval="2000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/banner1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/banner2.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/banner3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- <img src="images/php.jpg" class="img-fluid" alt="php"/> -->
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home-->
+
+    <!--bbs-->
+    <section id="bbs">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-12 col-md-4">
+                    <a href="http://www.huaruiedu.com" target="_blank">
+                        <img src="images/a.png" class="img-fluid" alt="" />
+                        <h3>Android开发</h3>
+                        <p>Android开发技术交流、问题求助、实战案例</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="http://www.huaruiedu.com" target="_blank">
+                        <img src="images/i.png" class="img-fluid" alt="" />
+                        <h3>IOS开发</h3>
+                        <p>iOS开发技术交流，海量iOS实战干货分享</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="http://www.huaruiedu.com" target="_blank">
+                        <img src="images/b.png" class="img-fluid" alt="" />
+                        <h3>嵌入式底层开发</h3>
+                        <p>底层嵌入式开发、实战案例等技术交流讨论</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--bbs-->
+
+    <!--html5-->
+    <section id="html5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 wow fadeInLeft">
+                    <h2>HTML5前端开发</h2>
+                    <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+                    <p><span class="glyphicon glyphicon-grain mai-icon"></span>使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+                    <p><span class="glyphicon glyphicon-grain mai-icon"></span>清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
+                </div>
+                <div class="col-12 col-md-6 wow fadeInRight text-right">
+                    <img src="images/html5.jpg" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--html5-->
+
+    <!--bootstrap-->
+    <section id="bootstrap">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="images/Bootstrap.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-12 mt-3 mt-sm-0 col-md-6">
+                    <h2>Bootstrap实战视频教程</h2>
+                    <p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+                    <p><span class="glyphicon glyphicon-grain mai-icon"></span>你的网站和应用能在 Bootstrap
+                        的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备。</p>
+                    <p><span class="glyphicon glyphicon-grain mai-icon"></span>Bootstrap 提供了全面、美观的文档。你能在这里找到关于 HTML
+                        元素、HTML 和 CSS 组件、jQuery 插件方面的所有详细文档。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--bootstrap-->
+
+    <!--course-->
+    <section id="course">
+        <div class="container">
+            <div class="row wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-12">
+                    <h2>最新课程</h2>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/swift.jpg" alt="swift语言">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline-success">加入学习</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--course-->
+
+    <!--app-->
+    <section id="app">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-12 col-md-6">
+                    <h2>华瑞IT学院移动APP下载</h2>
+                    <p>
+                        全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！
+                    </p>
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-download-alt"></span>
+                        iPhone版
+                    </button>
+                    <button class="btn btn-success">
+                        <span class="glyphicon glyphicon-download-alt"></span>
+                        Android版
+                    </button>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-sm-0">
+                    <img src="images/app-banner.jpg" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--app-->
+
+    <!--contact-->
+    <section id="contact">
+        <div class="lvjing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6  wow fadeInLeft">
+                        <h2>
+                            <span class="glyphicon glyphicon-send"></span>
+                            &nbsp;
+                            联系我们
+                        </h2>
+                        <p>
+                            华瑞IT教育——中南五省IT教育领导品牌，国家重要IT人才培养基地。学校成立于2003年，是一所集IT教育和科研于一体的高科技教育学校。也是仅有的受政府邀请以"园区IT人才入口"身份入驻在国家投资30多亿打造的IT企业园内的IT学校。
+                            学校现设有初、高中生和大学生软件开发、移动互联网开发以及计算机艺术设计等相关专业，包括Java 、.Net、安卓、Web前端、UI设计等多个课程方向。
+                            同时还设有高等教育、职业教育、自学助考等合作教育项目，形成了多层次、多学科、多边合作的办学模式和教育格局。
+                        </p>
+                        <address>
+                            <p>
+                                <span class="glyphicon glyphicon-home"></span>
+                                &nbsp;
+                                地址:长沙市市高新区中电软件园21~22栋
+                            </p>
+                            <p>
+                                <span class="glyphicon glyphicon-phone-alt"></span>
+                                &nbsp;
+                                联系电话：0731-89796517
+                            </p>
+                            <p>
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                &nbsp;
+                                邮箱:hr@huaruiedu.com
+                            </p>
+                        </address>
+                    </div>
+                    <div class="col-12 col-md-6  wow fadeInRight">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="您的姓名" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="您的邮箱" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="标题" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="留言内容" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="form-control btn-success" value="提交" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-->
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright&nbsp;©&nbsp;2003-2018&nbsp;&nbsp;www.huaruiedu.com&nbsp;&nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer-->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 一个轻量级的jQuery的单页网站导航插件。增加了单击后平滑滚动导航和当你浏览不同的部分时自动选择正确的导航项 -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- wow插件依赖于animate.css，当窗口变化时会执行css3动画 -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(function () {
+            /*单页导航跳转效果插件
+            插件地址：https://github.com/jeroenweustink/single-page-nav
+            会自动在当前导航添加class="current"
+            */
+            $('#nav').singlePageNav({
+                offset: 75
+            });
+            /*小屏幕导航点击链接后关闭下拉菜单*/
+            $('.navbar-collapse a').click(function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+            //wow插件实例化，该插件需要配合animated.css使用，比如在需要当窗口变化进行动画效果的div中添加<div class="col-12 col-md-6  wow fadeInRight">
+            //wow表示调用wow插件，fadeInRight表示animated.css的动画效果
+            //插件官网：https://github.com/matthieua/WOW
+            //http://www.jq22.com/yanshi1705
+            new WOW().init();
+        })
+    </script>
+</body>
+
+</html>
